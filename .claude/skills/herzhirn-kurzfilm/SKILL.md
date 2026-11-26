@@ -86,6 +86,10 @@ Bewusst NICHT: GSAP (eigene „Standard“-Lizenz), Motion Canvas (letztes Relea
 - **Git:** `stimmen/modelle/`, `.venv*`, `out/`, `*.wav` nie committen (Whisper-Modell 480 MB hat den Push blockiert). Finale MP4s bleiben in `out/final/` und werden dem User geschickt.
 - **Storyboard zuerst ansehen:** Fehler wie „Herz verdeckt Gesicht“, „Label über Gesicht“, „Sonne hinter Bergen“ fallen nur im Standbild auf.
 
+## Abgabe-Wunsch des Users
+- **Ein** Video zum Hochladen, 1080p, **80–100 MB** (Zwei-Pass-Encoding, Videobitrate ≈ 4,3 Mbit/s bei 2:35, Audio AAC 160k). Die 140-MB-Rohdatei ist zu groß zum Herunterladen.
+- Shorts/TikTok-Zubringer nur auf ausdrücklichen Wunsch (bei Folge 1 nicht gewünscht).
+
 ## Figur Mika
 - ~20 Jahre, geschlechtsneutral, wuschelige dunkle Locken (Kringel in 2 Lagen + Stirnlocken, wippen einzeln), übergroßer senffarbener Hoodie (`#e0a43a`) mit Kordeln und Bauchtasche, weite türkisgrüne Hose (`#5f8f86`), cremefarbene Sneaker mit Korallen-Akzent.
 - Gelenk-Puppe: `Pose` = Kopf, Schultern, Ellbogen, Hände, Hüfte, Knie, Füße. Fertige Posen in `POSEN` (`stehen`, `sitztHandy`, `radfahren`); eigene Posen per Objekt-Spread ableiten (z. B. Pedale per `knieIK` in `Strasse.tsx`).
