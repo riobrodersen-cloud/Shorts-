@@ -135,8 +135,8 @@ export const Koerper: React.FC<{ dauer?: number }> = ({ dauer = 150 }) => {
             <Strich punkte={[[30, -76], [44, -130]]} breite={18} farbe="#5a6ab8" seed="vene" />
             <Strich punkte={[[-50, -10], [-10, 20], [40, 0]]} breite={4} farbe="#7a1828" deckung={0.6} seed="kranz" />
           </g>
-          <Handschrift text="Herz" x={660} y={860} groesse={70} farbe="#fff3d6" drehung={-6} kontur="#6a1020" fortschritt={ip(frame, [8, 26], [0, 1], Easing.linear)} />
-          <Handschrift text={`${Math.round(bpm)}`} x={1130} y={860} groesse={54} farbe="#ffd27a" drehung={4} schrift="hand" />
+          <Handschrift text="Herz" x={740} y={760} groesse={70} farbe="#fff3d6" drehung={-6} kontur="#6a1020" fortschritt={ip(frame, [8, 26], [0, 1], Easing.linear)} />
+          <Handschrift text={`${Math.round(bpm)}`} x={1100} y={760} groesse={54} farbe="#ffd27a" drehung={4} schrift="hand" />
           {/* Magen mit Schmetterlingen */}
           <g opacity={ip(frame, [dauer * 0.35, dauer * 0.5], [0, 1])}>
             <Lasur form={kurve([[860, 1000], [980, 960], [1080, 990], [1060, 1080], [900, 1090], [860, 1000]], 4)} farbe="#e88a6a" deckung={0.8} seed="magen" schichten={4} kante="#8a3a2a" />
@@ -146,7 +146,7 @@ export const Koerper: React.FC<{ dauer?: number }> = ({ dauer = 150 }) => {
               const py = 980 + r() * 70 + Math.cos(frame / (7 + i) + i * 2) * 30;
               return <Schmetterling key={i} x={px} y={py} s={0.7 + r() * 0.4} phase={frame * 0.7 + i} farbe={["#f2b84b", "#9fd3c7", "#e9a8a0", "#c7b3e0"][i % 4]} seed={"sm" + i} />;
             })}
-            <Handschrift text="Magen" x={1240} y={1010} groesse={64} farbe="#fff3d6" drehung={-4} kontur="#6a2a2a" />
+            <Handschrift text="Magen" x={1150} y={960} groesse={64} farbe="#fff3d6" drehung={-4} kontur="#6a2a2a" />
           </g>
         </g>
       </svg>

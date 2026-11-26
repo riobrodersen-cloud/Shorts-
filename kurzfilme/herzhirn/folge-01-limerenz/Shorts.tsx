@@ -12,17 +12,21 @@ const Zt = zeiten as { dauer: number; zeilen: Z[]; schaetzung?: boolean };
 const zl = (id: string) => Zt.zeilen.find((l) => l.id === id)!;
 
 // Bildmitte (x im 1920er-Raster) je Einstellung fürs Hochformat
-const FOKUS: Record<string, number> = {
+const FOKUS: Record<string, number | [number, number][]> = {
   "Zimmer – 47×": 1130, "Gesicht im Handylicht": 960, "Auge – goldenes Glitzern": 960, "Innenwelt – Blick ins Tal": 900,
-  "Innenwelt – Strudel-Teaser": 905, "Flug durchs Auge": 960, "Dopamin-Flut": 860, "Hirnscanner": 1300,
-  "Handy – schreibt …": 968, "Wolke zieht auf": 900, "Wetter + Spielautomat": 1250, "Körper – Herz + Magen": 960, "Nacht – 3:12": 900,
+  "Innenwelt – Strudel-Teaser": 905, "Flug durchs Auge": 960, "Dopamin-Flut": [[0, 900], [1.5, 1260], [2.6, 1260], [3.3, 440], [8, 600]], "Hirnscanner": [[0, 620], [1.8, 620], [3.0, 1440]], "Scanner – Regionen leuchten": 960,
+  "Handy – schreibt …": 968, "Wolke zieht auf": 900, "Wetter + Spielautomat": [[0, 480], [1.8, 480], [3.2, 1420]], "Körper – Herz + Magen": 960, "Nacht – 3:12": 900,
 };
 
 const fokusBei = (filmFrame: number) => {
   const l = schnittliste();
   let akt = l[0];
   for (const x of l) if (x.von <= filmFrame) akt = x;
-  return FOKUS[akt.name] ?? 960;
+  const f = FOKUS[akt.name] ?? 960;
+  if (typeof f === "number") return f;
+  // Kameraschwenk innerhalb der Einstellung (Sekunden relativ zum Einstellungsbeginn)
+  const t = (filmFrame - akt.von) / FPS;
+  return interpolate(t, f.map((k) => k[0]), f.map((k) => k[1]), { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x) => x * x * (3 - 2 * x) });
 };
 
 export type Fenster = { von: number; bis: number }; // Sekunden im Hauptfilm
