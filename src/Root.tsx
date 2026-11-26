@@ -6,7 +6,7 @@ import { Zimmer } from "../kurzfilme/herzhirn/folge-01-limerenz/szenen/Zimmer";
 import { Strasse } from "../kurzfilme/herzhirn/folge-01-limerenz/szenen/Strasse";
 import { GehirnTal } from "../kurzfilme/herzhirn/folge-01-limerenz/szenen/GehirnTal";
 import { Film, filmDauer } from "../kurzfilme/herzhirn/folge-01-limerenz/Film";
-import { ThumbnailA, ThumbnailB } from "../kurzfilme/herzhirn/folge-01-limerenz/Thumbnail";
+import { ThumbnailA, ThumbnailB, ThumbnailC } from "../kurzfilme/herzhirn/folge-01-limerenz/Thumbnail";
 import { Profilbild } from "../kurzfilme/herzhirn/Profilbild";
 import { Banner } from "../kurzfilme/herzhirn/Banner";
 import { Short, SHORT_A, SHORT_B, shortDauer } from "../kurzfilme/herzhirn/folge-01-limerenz/Shorts";
@@ -24,5 +24,6 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="ShortB" component={Short} defaultProps={{ fenster: SHORT_B }} durationInFrames={shortDauer(SHORT_B)} fps={30} width={1080} height={1920} />
     <Composition id="Profilbild" component={Profilbild} durationInFrames={1} fps={30} width={800} height={800} />
     <Composition id="Banner" component={Banner} durationInFrames={1} fps={30} width={2560} height={1440} />
+    <Composition id="ThumbnailC" component={ThumbnailC} durationInFrames={1} fps={30} width={1280} height={720} />
   </>
 );
