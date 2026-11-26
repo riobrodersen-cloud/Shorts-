@@ -3,3 +3,6 @@ out/
 .venv/
 .venvs/
 *.log
+stimmen/modelle/
+*.wav
+public/herzhirn/folge01/voiceover_tmp.wav

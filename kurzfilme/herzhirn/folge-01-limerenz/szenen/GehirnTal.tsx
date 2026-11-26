@@ -326,7 +326,7 @@ const Nebel: React.FC<{ staerke: number }> = ({ staerke }) => {
 
 export type InnenModus = "flut" | "wolke" | "wetter" | "see" | "strudel" | "aufgang" | "nebel" | "teaser" | "anflug";
 
-export const GehirnTal: React.FC<{ mitLabels?: boolean; modus?: InnenModus; dauer?: number }> = ({ mitLabels = true, modus = "flut", dauer = 150 }) => {
+export const GehirnTal: React.FC<{ mitLabels?: boolean; modus?: InnenModus; dauer?: number; nah?: boolean }> = ({ mitLabels = true, modus = "flut", dauer = 150, nah = true }) => {
   const frame = useCurrentFrame();
   const f = frame;
   const ip = (a: number[], b: number[], e = Easing.inOut(Easing.cubic)) => interpolate(f, a, b, { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
@@ -395,12 +395,12 @@ export const GehirnTal: React.FC<{ mitLabels?: boolean; modus?: InnenModus; daue
     case "teaser":
       seeStand = modus === "strudel" ? 0.3 : 0.8;
       strudel = ip([0, 20], [0, 1]);
-      strudelTempo = modus === "teaser" ? f * 0.12 : (f * f) / 1400 + f * 0.05; // wird immer schneller
+      strudelTempo = modus === "teaser" ? f * 0.12 : nah ? (f * f) / 900 + f * 0.12 : (f * f) / 2400 + f * 0.04; // wird immer schneller
       silh = Math.max(0, Math.sin(f / (modus === "teaser" ? 10 : 14 - Math.min(8, f / 40))) ) * ip([20, 40], [0, 1]);
       flut = 0.55;
-      kam = { x: 0, y: 0, zoom: ip([0, dauer], modus === "teaser" ? [2.0, 2.4] : [2.0, 2.7]), fx: STRUDEL[0], fy: STRUDEL[1], drehung: modus === "strudel" ? ip([0, dauer], [0, 6]) : 0 } as typeof kam;
+      kam = { x: 0, y: 0, zoom: ip([0, dauer], modus === "teaser" ? [2.0, 2.4] : nah ? [2.1, 2.8] : [1.15, 1.5]), fx: STRUDEL[0], fy: STRUDEL[1], drehung: modus === "strudel" ? ip([0, dauer], [0, 6]) : 0 } as typeof kam;
       if (mitLabels && modus === "teaser") L("ph3", "Phase 3", 960, 300, 6, "#fff3d6", "#4a2240", 120, -6);
-      if (mitLabels && modus === "strudel") L("schl", "Gedankenschleife", 960, 210, 30, "#fff3d6", "#4a2240", 90, -4);
+      if (mitLabels && modus === "strudel" && !nah) L("schl", "Gedankenschleife", 960, 210, 12, "#fff3d6", "#4a2240", 90, -4);
       break;
     case "aufgang":
       aufgang = ip([0, dauer * 0.7], [0, 1]);

@@ -11,7 +11,13 @@ Empfehlung für den Start: **Titel 1** (konkretes Gefühl, Du-Ansprache) mit **T
 
 Du schaust ständig aufs Handy – nicht wegen einer Nachricht, sondern wegen der Hoffnung auf eine? Dahinter steckt Limerenz: ein Verliebtsein, das sich wie Besessenheit anfühlt. In diesem animierten Kurzfilm reist du mit Mika durch die drei Phasen – Belohnung, Unsicherheit, Gedankenschleife – und erfährst, was wirklich hilft.
 
-KAPITEL_PLATZHALTER
+**Kapitel**
+0:00 Hook: 47× aufs Handy
+0:16 Mika – und das Wort Limerenz
+0:45 Phase 1: Belohnung (Dopamin)
+1:06 Phase 2: Unsicherheit
+1:34 Phase 3: Die Gedankenschleife
+1:58 Was hilft
 
 **Quellen**
 - Tennov, D. (1979): Love and Limerence: The Experience of Being in Love. Stein and Day.

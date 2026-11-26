@@ -45,6 +45,7 @@ export const schnittliste = (): Einstellung[] => [
   { name: "Flug durchs Auge", von: s("p1a", -0.2), inhalt: (d) => <AugeNah dauer={d} oeffnen glitzer={0.6} /> },
   { name: "Dopamin-Flut", von: s("p1b", -0.1), inhalt: (d) => <GehirnTal dauer={d} modus="flut" />, blende: 12 },
   { name: "Hirnscanner", von: s("p1d", -0.1), inhalt: (d) => <Scanner dauer={d} />, blende: 8 },
+  { name: "Scanner – Regionen leuchten", von: s("p1e", -0.1), inhalt: (d) => <Scanner dauer={d} nah /> },
   // PHASE 2
   { name: "Handy – schreibt …", von: s("p2a", -0.2), inhalt: (d) => <HandyNah dauer={d} zustand="schreibt" /> },
   { name: "Wolke zieht auf", von: s("p2c", -0.1), inhalt: (d) => <GehirnTal dauer={d} modus="wolke" />, blende: 8 },
@@ -53,15 +54,18 @@ export const schnittliste = (): Einstellung[] => [
   { name: "Nacht – 3:12", von: s("p2j", -0.1), inhalt: (d) => <Bett dauer={d} /> },
   // PHASE 3
   { name: "Serotonin-See sinkt", von: s("p3a", -0.1), inhalt: (d) => <GehirnTal dauer={d} modus="see" />, blende: 10 },
-  { name: "Gedankenschleife", von: s("p3c", -0.4), inhalt: (d) => <GehirnTal dauer={d} modus="strudel" /> },
+  { name: "Strudel entsteht", von: s("p3b", -0.1), inhalt: (d) => <GehirnTal dauer={d} modus="strudel" nah={false} />, blende: 8 },
+  { name: "Gedankenschleife", von: s("p3c", -0.2), inhalt: (d) => <GehirnTal dauer={d} modus="strudel" /> },
   // HÖHEPUNKT – Strudel stoppt abrupt, Stille, nur Mikas Gesicht
-  { name: "Stille – Gesicht", von: e("p3e", 0.25), inhalt: (d) => <GesichtNah dauer={d} mimik="sehnsuechtig" zoomVon={1.05} zoomBis={1.22} dunkler={0.25} /> },
+  { name: "Stille – Gesicht", von: e("p3e", 0.25), inhalt: (d) => <GesichtNah dauer={d} mimik="sehnsuechtig" zoomVon={1.05} zoomBis={1.15} dunkler={0.25} /> },
+  { name: "Kernsatz – ganz nah", von: s("hoe2", -0.1), inhalt: (d) => <GesichtNah dauer={d} mimik="sehnsuechtig" zoomVon={1.3} zoomBis={1.42} dunkler={0.3} /> },
   // TROST
   { name: "Sonnenaufgang innen", von: s("tr1", -0.2), inhalt: (d) => <GehirnTal dauer={d} modus="aufgang" />, blende: 14 },
   { name: "Zimmer im Morgenlicht", von: s("tr3", -0.1), inhalt: (d) => <Zimmer dauer={d} morgen={1} zeigeZaehler={false} mimik="nervoes" zoom={[1.1, 1.15]} />, blende: 10 },
+  { name: "Morgenlicht – Mika nah", von: s("tr4", -0.1), inhalt: (d) => <Zimmer dauer={d} morgen={1} zeigeZaehler={false} mimik="neutral" zoom={[1.7, 1.8]} fokus={[1210, 660]} schwenk={[0, 0]} /> },
   { name: "Handy umdrehen", von: s("tr5", -0.2), inhalt: (d) => <HandyNah dauer={d} zustand="umgedreht" tag /> },
   { name: "Fenster öffnen", von: s("tr6", -0.1), inhalt: (d) => <Zimmer dauer={d} morgen={1} zeigeZaehler={false} mikaModus="fenster" fensterOffen={1} zoom={[1.0, 1.08]} fokus={[440, 560]} schwenk={[0, 0]} /> },
-  { name: "Lächeln", von: e("tr6", 0.2), inhalt: (d) => <GesichtNah dauer={d} licht="morgen" mimik="erleichtert" zoomVon={1.0} zoomBis={1.05} />, blende: 8 },
+  { name: "Lächeln", von: e("tr6", -0.4), inhalt: (d) => <GesichtNah dauer={d} licht="morgen" mimik="erleichtert" zoomVon={1.0} zoomBis={1.05} />, blende: 8 },
   // BRÜCKE
   { name: "Foto", von: s("end1", -0.1), inhalt: (d) => <HandyNah dauer={d} zustand="foto" tag /> },
   { name: "Grüner Nebel", von: s("end2", -0.1), inhalt: (d) => <GehirnTal dauer={d} modus="nebel" />, blende: 10 },

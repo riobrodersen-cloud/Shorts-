@@ -1,0 +1,365 @@
+{
+  "dauer": 159.914,
+  "zeilen": [
+    {
+      "id": "hook1",
+      "text": "Du hast heute siebenundvierzig Mal auf dein Handy geschaut.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 0.0,
+      "ende": 2.96
+    },
+    {
+      "id": "hook2",
+      "text": "Nicht wegen einer Nachricht.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 3.41,
+      "ende": 5.17
+    },
+    {
+      "id": "hook3",
+      "text": "Sondern wegen der Hoffnung auf eine.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 5.47,
+      "ende": 7.95
+    },
+    {
+      "id": "hook4",
+      "text": "Das ist keine Schwäche.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 8.65,
+      "ende": 10.65
+    },
+    {
+      "id": "hook5",
+      "text": "In deinem Kopf läuft ein Programm, das älter ist als die Menschheit.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 10.95,
+      "ende": 15.19
+    },
+    {
+      "id": "hook6",
+      "text": "Und Phase drei ist die gemeinste.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 15.54,
+      "ende": 17.54
+    },
+    {
+      "id": "mika1",
+      "text": "Das ist Mika.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 18.34,
+      "ende": 19.54
+    },
+    {
+      "id": "mika2",
+      "text": "Vor drei Wochen hat Mika jemanden kennengelernt.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 19.84,
+      "ende": 22.8
+    },
+    {
+      "id": "mika3",
+      "text": "Ein Gespräch. Zwanzig Minuten.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 23.1,
+      "ende": 25.82
+    },
+    {
+      "id": "mika4",
+      "text": "Seitdem handelt jedes Lied von dieser Person.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 26.22,
+      "ende": 28.78
+    },
+    {
+      "id": "mika5",
+      "text": "Jede Nachricht wird fünfmal gelesen.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 29.03,
+      "ende": 31.43
+    },
+    {
+      "id": "mika6",
+      "text": "Und jedes „online“ fühlt sich an wie ein Herzschlag.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 31.68,
+      "ende": 36.16
+    },
+    {
+      "id": "lim1",
+      "text": "Dafür gibt es ein Wort: Limerenz.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 36.86,
+      "ende": 39.98
+    },
+    {
+      "id": "lim2",
+      "text": "Die Psychologin Dorothy Tennov hat es neunzehnhundertneunundsiebzig geprägt.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 40.38,
+      "ende": 45.74
+    },
+    {
+      "id": "lim3",
+      "text": "Für ein Verliebtsein, das sich anfühlt wie Besessenheit.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 45.99,
+      "ende": 49.35
+    },
+    {
+      "id": "p1a",
+      "text": "Phase eins: Belohnung.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 50.15,
+      "ende": 52.71
+    },
+    {
+      "id": "p1b",
+      "text": "Jedes Mal, wenn diese Person antwortet, feuert tief in Mikas Gehirn das Belohnungssystem.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 53.11,
+      "ende": 58.79
+    },
+    {
+      "id": "p1c",
+      "text": "Dopamin flutet die Bahnen.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 59.09,
+      "ende": 60.77
+    },
+    {
+      "id": "p1d",
+      "text": "Forscher um Helen Fisher haben frisch Verliebte in einen Hirnscanner gelegt.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 61.37,
+      "ende": 65.53
+    },
+    {
+      "id": "p1e",
+      "text": "Es leuchteten genau die Regionen, die auch bei starkem Verlangen aktiv sind.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 65.83,
+      "ende": 70.63
+    },
+    {
+      "id": "p2a",
+      "text": "Aber das Gemeine ist nicht die Antwort.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 71.53,
+      "ende": 74.09
+    },
+    {
+      "id": "p2b",
+      "text": "Es ist das Warten.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 74.59,
+      "ende": 75.71
+    },
+    {
+      "id": "p2c",
+      "text": "Phase zwei: Unsicherheit.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 76.51,
+      "ende": 79.23
+    },
+    {
+      "id": "p2d",
+      "text": "Kommt die Antwort sofort, ist es schön.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 79.63,
+      "ende": 82.27
+    },
+    {
+      "id": "p2e",
+      "text": "Kommt sie manchmal – und manchmal nicht –, hängt sich das Gehirn am Vielleicht fest.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 82.57,
+      "ende": 88.65
+    },
+    {
+      "id": "p2f",
+      "text": "Genau so funktionieren Spielautomaten.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 89.05,
+      "ende": 91.53
+    },
+    {
+      "id": "p2g",
+      "text": "Mikas Körper merkt das.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 92.23,
+      "ende": 93.91
+    },
+    {
+      "id": "p2h",
+      "text": "Das Herz schlägt schneller, wenn das Handy vibriert.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 94.21,
+      "ende": 97.57
+    },
+    {
+      "id": "p2i",
+      "text": "Der Magen zieht sich zusammen.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 97.82,
+      "ende": 99.66
+    },
+    {
+      "id": "p2j",
+      "text": "Der Schlaf wird flach.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 99.91,
+      "ende": 101.59
+    },
+    {
+      "id": "p3a",
+      "text": "Und Phase drei: Die Gedanken hören nicht mehr auf.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 102.39,
+      "ende": 106.23
+    },
+    {
+      "id": "p3b",
+      "text": "Italienische Forscher fanden bei frisch Verliebten veränderte Serotonin-Werte – ähnlich wie bei Menschen mit Zwangsgedanken.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 106.63,
+      "ende": 114.39
+    },
+    {
+      "id": "p3c",
+      "text": "Darum kreisen sie.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 114.79,
+      "ende": 115.99
+    },
+    {
+      "id": "p3d",
+      "text": "Immer wieder.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 116.24,
+      "ende": 117.92
+    },
+    {
+      "id": "p3e",
+      "text": "Um dieselbe Person.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 118.17,
+      "ende": 119.45
+    },
+    {
+      "id": "hoe1",
+      "text": "Mika ist nicht in diese Person verliebt.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 121.05,
+      "ende": 123.727
+    },
+    {
+      "id": "hoe2",
+      "text": "Mika ist verliebt in das Gefühl, dass sie vielleicht zurückschreibt.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 124.327,
+      "ende": 128.134
+    },
+    {
+      "id": "tr1",
+      "text": "Die gute Nachricht: Limerenz bleibt nicht für immer.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 129.334,
+      "ende": 133.574
+    },
+    {
+      "id": "tr2",
+      "text": "Tennov schätzte, dass sie meist anderthalb bis drei Jahre hält.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 133.874,
+      "ende": 137.874
+    },
+    {
+      "id": "tr3",
+      "text": "Und Ungewissheit ist ihr Treibstoff.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 138.274,
+      "ende": 140.514
+    },
+    {
+      "id": "tr4",
+      "text": "Klarheit – eine ehrliche Frage, eine ehrliche Antwort – ist das stärkste Gegenmittel.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 140.914,
+      "ende": 146.834
+    },
+    {
+      "id": "tr5",
+      "text": "Mika legt das Handy weg.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 147.634,
+      "ende": 149.474
+    },
+    {
+      "id": "tr6",
+      "text": "Zum ersten Mal seit drei Wochen.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 149.824,
+      "ende": 151.984
+    },
+    {
+      "id": "end1",
+      "text": "Und was in deinem Gehirn passiert, wenn du eifersüchtig wirst?",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 152.984,
+      "ende": 157.704
+    },
+    {
+      "id": "end2",
+      "text": "Das ist der nächste Film.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 158.054,
+      "ende": 159.414
+    }
+  ]
+}

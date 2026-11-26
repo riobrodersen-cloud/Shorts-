@@ -20,7 +20,9 @@ def umbrechen(t, breite=42):
 
 bloecke = []
 for l in z["zeilen"]:
-    text = l["text"].replace("„", "„").strip()
+    text = l["text"].strip()
+    for a, b in (("siebenundvierzig Mal", "47-mal"), ("neunzehnhundertneunundsiebzig", "1979")):
+        text = text.replace(a, b)
     teile = [text]
     if len(text) > 84:
         teile = [p.strip() for p in re.split(r"(?<=[,–:])\s+", text) if p.strip()]

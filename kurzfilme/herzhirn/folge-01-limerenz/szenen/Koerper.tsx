@@ -40,16 +40,16 @@ export const GehirnSeite: React.FC<{ x: number; y: number; s: number; leuchten: 
   );
 };
 
-export const Scanner: React.FC<{ dauer?: number }> = ({ dauer = 150 }) => {
+export const Scanner: React.FC<{ dauer?: number; nah?: boolean }> = ({ dauer = 150, nah = false }) => {
   const frame = useCurrentFrame();
-  const z = ip(frame, [0, dauer], [1, 1.1]);
-  const leuchten = ip(frame, [dauer * 0.45, dauer * 0.65], [0, 1]);
+  const z = nah ? ip(frame, [0, dauer], [2.0, 2.25]) : ip(frame, [0, dauer], [1, 1.1]);
+  const leuchten = nah ? ip(frame, [6, 30], [0, 1]) : 0;
   const F = MIKA_FARBEN;
   return (
     <AbsoluteFill style={{ background: "#f6e2c8" }}>
       <Schriften />
       <svg viewBox="0 0 1920 1080" width={1920} height={1080}>
-        <g transform={`translate(960 560) scale(${z}) translate(-960 -560)`}>
+        <g transform={nah ? `translate(960 560) scale(${z}) translate(-1480 -380)` : `translate(960 560) scale(${z}) translate(-960 -560)`}>
           {/* Raum: warme Wand, Fenster mit Grün */}
           <Lasur form={klecks(960, 400, 1200, 520, "swand", 12, 0.1)} farbe="#9fd3c7" deckung={0.55} seed="swand" schichten={8} streuung={0.8} kante={false} />
           <Lasur form={klecks(300, 300, 300, 200, "sw2", 12, 0.2)} farbe="#f2b38a" deckung={0.3} seed="sw2" schichten={6} kante={false} />
