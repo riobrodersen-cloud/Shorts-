@@ -1,0 +1,45 @@
+{
+ "dauer": 16.491,
+ "zeilen": [
+  {
+   "id": "a",
+   "text": "Vielleicht bist du gar nicht in diese Person verliebt.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 0.0,
+   "ende": 2.836
+  },
+  {
+   "id": "b",
+   "text": "Forscher haben frisch Verliebte in einen Hirnscanner gelegt.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 3.291,
+   "ende": 6.418
+  },
+  {
+   "id": "c",
+   "text": "Es leuchteten genau die Regionen, die auch bei starkem Verlangen aktiv sind.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 6.645,
+   "ende": 10.864
+  },
+  {
+   "id": "d",
+   "text": "Worin du also wirklich verliebt bist?",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 11.091,
+   "ende": 13.709
+  },
+  {
+   "id": "e",
+   "text": "Das zeige ich dir im ganzen Film auf meinem Kanal.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 13.936,
+   "ende": 16.264
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "dauer": 19.027,
+ "zeilen": [
+  {
+   "id": "a",
+   "text": "Warum macht dich jemand, der nur manchmal antwortet, verrückter als jemand, der immer antwortet?",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 0.0,
+   "ende": 5.745
+  },
+  {
+   "id": "b",
+   "text": "Kommt die Antwort sofort, ist es schön.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 5.973,
+   "ende": 7.936
+  },
+  {
+   "id": "c",
+   "text": "Kommt sie manchmal – und manchmal nicht –, hängt sich dein Gehirn am Vielleicht fest.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 8.164,
+   "ende": 13.836
+  },
+  {
+   "id": "d",
+   "text": "Genau so funktionieren Spielautomaten.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 14.064,
+   "ende": 16.391
+  },
+  {
+   "id": "e",
+   "text": "Den ganzen Film findest du auf meinem Kanal.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 16.618,
+   "ende": 18.8
+  }
+ ]
+}

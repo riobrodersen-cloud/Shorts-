@@ -31,7 +31,7 @@ const fokusBei = (filmFrame: number) => {
 
 export type Fenster = { von: number; bis: number }; // Sekunden im Hauptfilm
 
-export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean; fokus?: (number | undefined)[] }> = ({ fenster, stimme = true, fokus }) => {
+export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean; ton?: boolean; fokus?: (number | undefined)[]; zaehler?: boolean }> = ({ fenster, stimme = true, ton = true, fokus, zaehler = true }) => {
   const f = useCurrentFrame();
   // welche Filmstelle läuft gerade?
   let rest = f;
@@ -55,7 +55,7 @@ export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean; fokus?: 
           const el = (
             <Sequence key={i} from={start} durationInFrames={len}>
               <Sequence from={-Math.round(w.von * FPS)}>
-                <Film mitStimme={stimme} />
+                <Film mitStimme={stimme} mitTon={ton} />
               </Sequence>
             </Sequence>
           );
@@ -66,7 +66,7 @@ export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean; fokus?: 
       {(() => {
         const l = schnittliste();
         const ende = l[1].von;
-        if (filmFrame >= ende) return null;
+        if (!zaehler || filmFrame >= ende) return null;
         const n = Math.round(interpolate(filmFrame, [10, ende * 0.75], [39, 47], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
         return (
           <svg viewBox="0 0 1080 1920" width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>

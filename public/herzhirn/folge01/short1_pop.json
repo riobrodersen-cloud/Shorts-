@@ -1,0 +1,53 @@
+{
+ "dauer": 17.073,
+ "zeilen": [
+  {
+   "id": "a",
+   "text": "Du hast heute siebenundvierzig Mal aufs Handy geschaut.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 0.0,
+   "ende": 2.618
+  },
+  {
+   "id": "b",
+   "text": "Nicht wegen einer Nachricht.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 2.845,
+   "ende": 4.227
+  },
+  {
+   "id": "c",
+   "text": "Sondern wegen der Hoffnung auf eine.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 4.455,
+   "ende": 6.2
+  },
+  {
+   "id": "d",
+   "text": "In deinem Kopf läuft gerade ein Programm, das älter ist als die Menschheit.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 6.427,
+   "ende": 11.082
+  },
+  {
+   "id": "e",
+   "text": "Und es hat drei Phasen. Die dritte ist die gemeinste.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 11.309,
+   "ende": 14.291
+  },
+  {
+   "id": "f",
+   "text": "Den ganzen Film findest du auf meinem Kanal.",
+   "stimme": "figur:erzaehler",
+   "sprecher": null,
+   "start": 14.518,
+   "ende": 16.845
+  }
+ ]
+}

@@ -90,6 +90,15 @@ Bewusst NICHT: GSAP (eigene „Standard“-Lizenz), Motion Canvas (letztes Relea
 - **Ein** Video zum Hochladen, 1080p, **80–100 MB** (Zwei-Pass-Encoding, Videobitrate ≈ 4,3 Mbit/s bei 2:35, Audio AAC 160k). Die 140-MB-Rohdatei ist zu groß zum Herunterladen.
 - Shorts/TikTok-Zubringer nur auf ausdrücklichen Wunsch (bei Folge 1 nicht gewünscht).
 
+## Ton – User-Feedback Folge 1 („Sounds katastrophal“)
+- Musik war zu laut, der Whoosh beim Auge viel zu laut. Jetzt: Musik/Geräusche im Film ~15 dB unter der Stimme (atmo ≈ −33 LUFS vs. Stimme −18), Whoosh/Donner nur leise, starkes Ducking.
+- **Nie** die Film-Atmo unter einen neuen Short-Text legen (Ducking passt nicht) – Shorts bekommen eigenen Mix: `scripts/popton.py <n>` (Stimme ×1,1, Pop-Beat 118 BPM, Ducking 55 %, dezente Effekte, −16 LUFS).
+- Film-Ton ändern ohne neu zu rendern: Stimme + atmo mit ffmpeg mischen und mit `-c:v copy` auf das fertige Video legen.
+
+## Teaser-Shorts (vom User gewünscht: 3 Stück, kurz, poppig)
+- `Teaser.tsx`: ~17–20 s, Schnitt alle 1,5–2 s (Teil mit `ab` = Schnitt mitten im Satz), Punch-Zoom + kurzer Lichtblitz bei jedem Schnitt, Untertitel im Shorts-Stil (2–3 Wörter, Schlüsselwort gold, bei y≈1480 – nie über Gesichtern), Schlusskarte „Ganzer Film auf meinem Kanal ♥“.
+- Labels der Szenen im Hochformat über `fokus` pro Teil komplett ins Bild holen.
+
 ## Figur Mika
 - ~20 Jahre, geschlechtsneutral, wuschelige dunkle Locken (Kringel in 2 Lagen + Stirnlocken, wippen einzeln), übergroßer senffarbener Hoodie (`#e0a43a`) mit Kordeln und Bauchtasche, weite türkisgrüne Hose (`#5f8f86`), cremefarbene Sneaker mit Korallen-Akzent.
 - Gelenk-Puppe: `Pose` = Kopf, Schultern, Ellbogen, Hände, Hüfte, Knie, Füße. Fertige Posen in `POSEN` (`stehen`, `sitztHandy`, `radfahren`); eigene Posen per Objekt-Spread ableiten (z. B. Pedale per `knieIK` in `Strasse.tsx`).

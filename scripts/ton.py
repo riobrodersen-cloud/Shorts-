@@ -204,8 +204,8 @@ def lang(name): return t_bis(name) - t_von(name)
 # Hook
 platz(fx, vibration(), 0.25, 0.8, 0.1)
 platz(fx, rauschen(lang("Zimmer – 47×") + lang("Gesicht im Handylicht"), 80, 400, 0.05), 0, 0.03)  # Raumton
-platz(fx, glitzer(1.8), ab("Auge – goldenes Glitzern"), 0.9, 0.2)
-platz(fx, whoosh(1.2), ab("Innenwelt – Blick ins Tal") - 0.4, 0.8)
+platz(fx, glitzer(1.8), ab("Auge – goldenes Glitzern"), 0.5, 0.2)
+platz(fx, whoosh(1.2), ab("Innenwelt – Blick ins Tal") - 0.4, 0.2)
 for nm in ("Innenwelt – Blick ins Tal", "Innenwelt – Strudel-Teaser", "Dopamin-Flut", "Wolke zieht auf", "Wetter + Spielautomat", "Serotonin-See sinkt", "Gedankenschleife", "Sonnenaufgang innen", "Grüner Nebel"):
     platz(fx, rauschen(lang(nm) + 0.6, 180, 1400, 0.3), ab(nm), 0.06, -0.2)   # Wasser
     platz(fx, rauschen(lang(nm) + 0.6, 60, 500, 0.1), ab(nm), 0.04, 0.3)     # Wind
@@ -223,15 +223,15 @@ platz(fx, herzschlag(70, 1.2, 1.4), ab("Bus – online") + 1.1, 1.0)
 for nm in ("Titel Limerenz", "Titel Tennov", "Titel Besessenheit"):
     platz(fx, pinsel(0.9), ab(nm) + 0.2, 1.0, 0.2)
 # Phase 1
-platz(fx, whoosh(1.8), ab("Flug durchs Auge"), 1.0)
+platz(fx, whoosh(1.8), ab("Flug durchs Auge"), 0.22)
 platz(fx, vibration(0.9), ab("Dopamin-Flut") + 0.9, 0.8)
-platz(fx, glitzer(3.0, 60), ab("Dopamin-Flut") + 1.4, 1.0, -0.1)
+platz(fx, glitzer(3.0, 60), ab("Dopamin-Flut") + 1.4, 0.5, -0.1)
 platz(fx, rauschen(lang("Hirnscanner"), 200, 900, 2.0), ab("Hirnscanner"), 0.03)  # Scanner-Summen
 platz(fx, glitzer(1.5, 20), ab("Hirnscanner") + lang("Hirnscanner") * 0.5, 0.7)
 # Phase 2
 platz(fx, rauschen(lang("Wolke zieht auf"), 50, 300, 0.1), ab("Wolke zieht auf"), 0.1)
 platz(fx, ratsche(1.6), ab("Wetter + Spielautomat") + 0.4, 0.5, 0.5)
-platz(fx, donner(3.0), ab("Wetter + Spielautomat") + lang("Wetter + Spielautomat") * 0.62, 0.9)
+platz(fx, donner(3.0), ab("Wetter + Spielautomat") + lang("Wetter + Spielautomat") * 0.62, 0.35)
 platz(fx, rauschen(lang("Wetter + Spielautomat") * 0.4, 1500, 8000, 3), ab("Wetter + Spielautomat") + lang("Wetter + Spielautomat") * 0.6, 0.1)  # Regen
 d = lang("Körper – Herz + Magen")
 platz(fx, herzschlag(70, d / 2, 1.2), ab("Körper – Herz + Magen"), 1.0)
@@ -262,11 +262,11 @@ v = np.pad(np.abs(v), (0, max(0, N - len(v))))[:N]
 blk = SR // 20
 env = np.repeat([v[i:i + blk].max() if i < N else 0 for i in range(0, N, blk)], blk)[:N]
 env = np.convolve(env, np.ones(SR // 4) / (SR // 4), mode="same")
-duck = 1 - 0.45 * np.clip(env / 0.15, 0, 1)
+duck = 1 - 0.6 * np.clip(env / 0.12, 0, 1)
 
 musik /= (np.abs(musik).max() + 1e-9)
 fx /= (np.abs(fx).max() + 1e-9)
-mix = musik * 0.22 * duck[:, None] + fx * 0.32
+mix = musik * 0.13 * duck[:, None] + fx * 0.26 * (1 - 0.35 * np.clip(env / 0.12, 0, 1))[:, None]
 mix /= max(1.0, np.abs(mix).max() / 0.9)
 pcm = (mix * 32767).astype(np.int16)
 with wave.open("out/atmo.wav", "wb") as w:
