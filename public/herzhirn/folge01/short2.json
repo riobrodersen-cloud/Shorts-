@@ -1,1 +1,45 @@
-{"dauer": 20.45, "zeilen": [{"id": "a", "text": "Warum macht dich jemand, der nur manchmal antwortet, verrückter als jemand, der immer antwortet?", "start": 0, "ende": 5.6}, {"id": "b", "text": "Kommt die Antwort sofort, ist es schön.", "start": 5.85, "ende": 8.65}, {"id": "c", "text": "Kommt sie manchmal – und manchmal nicht –, hängt sich dein Gehirn am Vielleicht fest.", "start": 8.9, "ende": 14.9}, {"id": "d", "text": "Genau so funktionieren Spielautomaten.", "start": 15.15, "ende": 16.75}, {"id": "e", "text": "Den ganzen Film findest du auf meinem Kanal.", "start": 17.0, "ende": 20.2}]}
+{
+  "dauer": 20.93,
+  "zeilen": [
+    {
+      "id": "a",
+      "text": "Warum macht dich jemand, der nur manchmal antwortet, verrückter als jemand, der immer antwortet?",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 0.0,
+      "ende": 6.32
+    },
+    {
+      "id": "b",
+      "text": "Kommt die Antwort sofort, ist es schön.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 6.57,
+      "ende": 8.73
+    },
+    {
+      "id": "c",
+      "text": "Kommt sie manchmal – und manchmal nicht –, hängt sich dein Gehirn am Vielleicht fest.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 8.98,
+      "ende": 15.22
+    },
+    {
+      "id": "d",
+      "text": "Genau so funktionieren Spielautomaten.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 15.47,
+      "ende": 18.03
+    },
+    {
+      "id": "e",
+      "text": "Den ganzen Film findest du auf meinem Kanal.",
+      "stimme": "figur:erzaehler",
+      "sprecher": null,
+      "start": 18.28,
+      "ende": 20.68
+    }
+  ]
+}

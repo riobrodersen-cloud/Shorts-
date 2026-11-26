@@ -31,18 +31,20 @@ const fokusBei = (filmFrame: number) => {
 
 export type Fenster = { von: number; bis: number }; // Sekunden im Hauptfilm
 
-export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean }> = ({ fenster, stimme = true }) => {
+export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean; fokus?: (number | undefined)[] }> = ({ fenster, stimme = true, fokus }) => {
   const f = useCurrentFrame();
   // welche Filmstelle läuft gerade?
   let rest = f;
   let filmFrame = 0;
+  let idx = 0;
   for (const w of fenster) {
     const len = Math.round((w.bis - w.von) * FPS);
     if (rest < len) { filmFrame = Math.round(w.von * FPS) + rest; break; }
     rest -= len;
+    idx++;
   }
   const s = 1920 / 1080;
-  const fx = Math.min(1920 - 540 / s, Math.max(540 / s, fokusBei(filmFrame)));
+  const fx = Math.min(1920 - 540 / s, Math.max(540 / s, fokus?.[idx] ?? fokusBei(filmFrame)));
   const tx = 540 - fx * s;
   let start = 0;
   return (
