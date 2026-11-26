@@ -1,0 +1,11 @@
+{
+  "stimme": "figur:erzaehler",
+  "pause": 0.4,
+  "zeilen": [
+    { "id": "intro", "text": "Willkommen zu unserem ersten 3D-Video." },
+    { "id": "frage", "stimme": "figur:erzaehlerin", "text": "Und das kostet wirklich gar nichts?" },
+    { "id": "antwort", "stimme": "qwen:Ryan", "anweisung": "amüsiert und locker", "text": "Keinen einzigen Cent. Alles läuft auf unserem eigenen Rechner." },
+    { "id": "pocket", "stimme": "pocket:vera", "text": "Ich bin besonders schnell erzeugt und klinge trotzdem natürlich." },
+    { "id": "ende", "stimme": "de_DE-thorsten-high", "text": "Und ich bin die alte Stimme, zum Vergleich." }
+  ]
+}

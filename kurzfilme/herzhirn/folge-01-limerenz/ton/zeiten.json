@@ -1,0 +1,276 @@
+{
+ "dauer": 162.16,
+ "zeilen": [
+  {
+   "id": "hook1",
+   "text": "Du hast heute siebenundvierzig Mal auf dein Handy geschaut.",
+   "start": 0.0,
+   "ende": 3.92
+  },
+  {
+   "id": "hook2",
+   "text": "Nicht wegen einer Nachricht.",
+   "start": 4.37,
+   "ende": 6.26
+  },
+  {
+   "id": "hook3",
+   "text": "Sondern wegen der Hoffnung auf eine.",
+   "start": 6.56,
+   "ende": 9.26
+  },
+  {
+   "id": "hook4",
+   "text": "Das ist keine Schwäche.",
+   "start": 9.96,
+   "ende": 11.84
+  },
+  {
+   "id": "hook5",
+   "text": "In deinem Kopf läuft ein Programm, das älter ist als die Menschheit.",
+   "start": 12.14,
+   "ende": 17.29
+  },
+  {
+   "id": "hook6",
+   "text": "Und Phase drei ist die gemeinste.",
+   "start": 17.64,
+   "ende": 20.33
+  },
+  {
+   "id": "mika1",
+   "text": "Das ist Mika.",
+   "start": 21.13,
+   "ende": 22.61
+  },
+  {
+   "id": "mika2",
+   "text": "Vor drei Wochen hat Mika jemanden kennengelernt.",
+   "start": 22.91,
+   "ende": 26.02
+  },
+  {
+   "id": "mika3",
+   "text": "Ein Gespräch. Zwanzig Minuten.",
+   "start": 26.32,
+   "ende": 28.2
+  },
+  {
+   "id": "mika4",
+   "text": "Seitdem handelt jedes Lied von dieser Person.",
+   "start": 28.6,
+   "ende": 31.71
+  },
+  {
+   "id": "mika5",
+   "text": "Jede Nachricht wird fünfmal gelesen.",
+   "start": 31.96,
+   "ende": 34.25
+  },
+  {
+   "id": "mika6",
+   "text": "Und jedes „online“ fühlt sich an wie ein Herzschlag.",
+   "start": 34.5,
+   "ende": 38.42
+  },
+  {
+   "id": "lim1",
+   "text": "Dafür gibt es ein Wort: Limerenz.",
+   "start": 39.12,
+   "ende": 41.82
+  },
+  {
+   "id": "lim2",
+   "text": "Die Psychologin Dorothy Tennov hat es neunzehnhundertneunundsiebzig geprägt.",
+   "start": 42.22,
+   "ende": 45.73
+  },
+  {
+   "id": "lim3",
+   "text": "Für ein Verliebtsein, das sich anfühlt wie Besessenheit.",
+   "start": 45.98,
+   "ende": 49.5
+  },
+  {
+   "id": "p1a",
+   "text": "Phase eins: Belohnung.",
+   "start": 50.3,
+   "ende": 51.77
+  },
+  {
+   "id": "p1b",
+   "text": "Jedes Mal, wenn diese Person antwortet, feuert tief in Mikas Gehirn das Belohnungssystem.",
+   "start": 52.17,
+   "ende": 57.73
+  },
+  {
+   "id": "p1c",
+   "text": "Dopamin flutet die Bahnen.",
+   "start": 58.03,
+   "ende": 59.91
+  },
+  {
+   "id": "p1d",
+   "text": "Forscher um Helen Fisher haben frisch Verliebte in einen Hirnscanner gelegt.",
+   "start": 60.51,
+   "ende": 65.25
+  },
+  {
+   "id": "p1e",
+   "text": "Es leuchteten genau die Regionen, die auch bei starkem Verlangen aktiv sind.",
+   "start": 65.55,
+   "ende": 70.7
+  },
+  {
+   "id": "p2a",
+   "text": "Aber das Gemeine ist nicht die Antwort.",
+   "start": 71.6,
+   "ende": 74.71
+  },
+  {
+   "id": "p2b",
+   "text": "Es ist das Warten.",
+   "start": 75.21,
+   "ende": 77.09
+  },
+  {
+   "id": "p2c",
+   "text": "Phase zwei: Unsicherheit.",
+   "start": 77.89,
+   "ende": 79.37
+  },
+  {
+   "id": "p2d",
+   "text": "Kommt die Antwort sofort, ist es schön.",
+   "start": 79.77,
+   "ende": 82.87
+  },
+  {
+   "id": "p2e",
+   "text": "Kommt sie manchmal – und manchmal nicht –, hängt sich das Gehirn am Vielleicht fest.",
+   "start": 83.17,
+   "ende": 89.54
+  },
+  {
+   "id": "p2f",
+   "text": "Genau so funktionieren Spielautomaten.",
+   "start": 89.94,
+   "ende": 91.83
+  },
+  {
+   "id": "p2g",
+   "text": "Mikas Körper merkt das.",
+   "start": 92.53,
+   "ende": 94.41
+  },
+  {
+   "id": "p2h",
+   "text": "Das Herz schlägt schneller, wenn das Handy vibriert.",
+   "start": 94.71,
+   "ende": 98.23
+  },
+  {
+   "id": "p2i",
+   "text": "Der Magen zieht sich zusammen.",
+   "start": 98.48,
+   "ende": 100.77
+  },
+  {
+   "id": "p2j",
+   "text": "Der Schlaf wird flach.",
+   "start": 101.02,
+   "ende": 102.9
+  },
+  {
+   "id": "p3a",
+   "text": "Und Phase drei: Die Gedanken hören nicht mehr auf.",
+   "start": 103.7,
+   "ende": 107.62
+  },
+  {
+   "id": "p3b",
+   "text": "Italienische Forscher fanden bei frisch Verliebten veränderte Serotonin-Werte – ähnlich wie bei Menschen mit Zwangsgedanken.",
+   "start": 108.02,
+   "ende": 114.39
+  },
+  {
+   "id": "p3c",
+   "text": "Darum kreisen sie.",
+   "start": 114.79,
+   "ende": 116.27
+  },
+  {
+   "id": "p3d",
+   "text": "Immer wieder.",
+   "start": 116.52,
+   "ende": 117.59
+  },
+  {
+   "id": "p3e",
+   "text": "Um dieselbe Person.",
+   "start": 117.84,
+   "ende": 119.31
+  },
+  {
+   "id": "hoe1",
+   "text": "Mika ist nicht in diese Person verliebt.",
+   "start": 120.91,
+   "ende": 124.27
+  },
+  {
+   "id": "hoe2",
+   "text": "Mika ist verliebt in das Gefühl, dass sie vielleicht zurückschreibt.",
+   "start": 124.87,
+   "ende": 129.55
+  },
+  {
+   "id": "tr1",
+   "text": "Die gute Nachricht: Limerenz bleibt nicht für immer.",
+   "start": 130.75,
+   "ende": 134.27
+  },
+  {
+   "id": "tr2",
+   "text": "Tennov schätzte, dass sie meist anderthalb bis drei Jahre hält.",
+   "start": 134.57,
+   "ende": 138.9
+  },
+  {
+   "id": "tr3",
+   "text": "Und Ungewissheit ist ihr Treibstoff.",
+   "start": 139.3,
+   "ende": 141.59
+  },
+  {
+   "id": "tr4",
+   "text": "Klarheit – eine ehrliche Frage, eine ehrliche Antwort – ist das stärkste Gegenmittel.",
+   "start": 141.99,
+   "ende": 147.55
+  },
+  {
+   "id": "tr5",
+   "text": "Mika legt das Handy weg.",
+   "start": 148.35,
+   "ende": 150.64
+  },
+  {
+   "id": "tr6",
+   "text": "Zum ersten Mal seit drei Wochen.",
+   "start": 150.99,
+   "ende": 153.69
+  },
+  {
+   "id": "end1",
+   "text": "Und was in deinem Gehirn passiert, wenn du eifersüchtig wirst?",
+   "start": 154.69,
+   "ende": 159.02
+  },
+  {
+   "id": "end2",
+   "text": "Das ist der nächste Film.",
+   "start": 159.37,
+   "ende": 161.66
+  }
+ ],
+ "schaetzung": true
+}
