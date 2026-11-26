@@ -78,6 +78,14 @@ Bewusst NICHT: GSAP (eigene „Standard“-Lizenz), Motion Canvas (letztes Relea
 ## Szenen-Bausteine Folge 1 (als Vorlage, NICHT kopieren – jede Folge eigene Orte)
 `Zimmer` (Nacht/Morgen, Mika sitzt/Fenster), `Strasse` (Rad), `Party`, `Bus`, `Titel`, `GesichtNah`, `AugeNah` (Pupille öffnet sich zum Himmel = Übergang nach innen), `HandyNah` (online/schreibt/Nachricht/Foto/umgedreht), `GehirnTal` mit Modi `flut | wolke | wetter | see | strudel | teaser | aufgang | nebel | anflug`, `Scanner`, `Koerper` (Herz + Schmetterlinge), `Bett` (3:12).
 
+## Gelernt bei Folge 1 (Produktion)
+- **Stimme:** Qwen erzeugt pro Zeile ~30–50 s Rechenzeit (45 Zeilen ≈ 35 min). Whisper-WER zeigt oft nur Zahlen/Namen als „Fehler“ („47“, „Fischer“) – echte Wortabweichungen (z. B. „merkt es“ statt „merkt das“) neu erzeugen; Betonung erzwingen mit Akzent/Großschreibung im Text („merkt DAS“), bis WER 0 %.
+- **Länge steuern ohne Neuvertonung:** `scripts/stimme_straffen.py` (Zeilen aus voiceover_roh ausschneiden, Ränder kürzen, Pausen skalieren, einzelne Zeilen ersetzen, Lautheit −16 LUFS). Folge 1: Tempo 1,0, Pausenfaktor 1,25 → 2:35 inkl. 8 s Abspann.
+- **Master:** Film-Ton nach dem Render mit `loudnorm=I=-14` (YouTube) normalisieren, Video per `-c:v copy`. Musik/Geräusche ~10 dB unter der Stimme.
+- **Shorts:** Hauptfilm-Ausschnitte im Hochformat (Skalierung 1,78, Bildmitte je Einstellung über `FOKUS` in `Shorts.tsx`). Labels links und rechts im Bild → **Kameraschwenk-Keyframes** (`[[sek, x], …]`), sonst werden sie abgeschnitten. Labels für spätere Folgen möglichst nah zur Bildmitte setzen.
+- **Git:** `stimmen/modelle/`, `.venv*`, `out/`, `*.wav` nie committen (Whisper-Modell 480 MB hat den Push blockiert). Finale MP4s bleiben in `out/final/` und werden dem User geschickt.
+- **Storyboard zuerst ansehen:** Fehler wie „Herz verdeckt Gesicht“, „Label über Gesicht“, „Sonne hinter Bergen“ fallen nur im Standbild auf.
+
 ## Figur Mika
 - ~20 Jahre, geschlechtsneutral, wuschelige dunkle Locken (Kringel in 2 Lagen + Stirnlocken, wippen einzeln), übergroßer senffarbener Hoodie (`#e0a43a`) mit Kordeln und Bauchtasche, weite türkisgrüne Hose (`#5f8f86`), cremefarbene Sneaker mit Korallen-Akzent.
 - Gelenk-Puppe: `Pose` = Kopf, Schultern, Ellbogen, Hände, Hüfte, Knie, Füße. Fertige Posen in `POSEN` (`stehen`, `sitztHandy`, `radfahren`); eigene Posen per Objekt-Spread ableiten (z. B. Pedale per `knieIK` in `Strasse.tsx`).
