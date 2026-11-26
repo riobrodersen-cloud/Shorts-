@@ -1,0 +1,7 @@
+{ "stimme": "figur:erzaehler", "pause": 0.25, "zeilen": [
+  { "id": "a", "text": "Vielleicht bist du gar nicht in diese Person verliebt.", "pause": 0.5 },
+  { "id": "b", "text": "Forscher haben frisch Verliebte in einen Hirnscanner gelegt." },
+  { "id": "c", "text": "Es leuchteten genau die Regionen, die auch bei starkem Verlangen aktiv sind." },
+  { "id": "d", "text": "Worin du also wirklich verliebt bist?" },
+  { "id": "e", "text": "Das zeige ich dir im ganzen Film auf meinem Kanal." }
+] }

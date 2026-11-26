@@ -1,0 +1,8 @@
+{ "stimme": "figur:erzaehler", "pause": 0.25, "zeilen": [
+  { "id": "a", "text": "Du hast heute siebenundvierzig Mal aufs Handy geschaut." },
+  { "id": "b", "text": "Nicht wegen einer Nachricht." },
+  { "id": "c", "text": "Sondern wegen der Hoffnung auf eine." },
+  { "id": "d", "text": "In deinem Kopf läuft gerade ein Programm, das älter ist als die Menschheit." },
+  { "id": "e", "text": "Und es hat drei Phasen. Die dritte ist die gemeinste." },
+  { "id": "f", "text": "Den ganzen Film findest du auf meinem Kanal." }
+] }

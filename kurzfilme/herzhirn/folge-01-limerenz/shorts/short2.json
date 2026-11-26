@@ -1,0 +1,7 @@
+{ "stimme": "figur:erzaehler", "pause": 0.25, "zeilen": [
+  { "id": "a", "text": "Warum macht dich jemand, der nur manchmal antwortet, verrückter als jemand, der immer antwortet?" },
+  { "id": "b", "text": "Kommt die Antwort sofort, ist es schön." },
+  { "id": "c", "text": "Kommt sie manchmal – und manchmal nicht –, hängt sich dein Gehirn am Vielleicht fest." },
+  { "id": "d", "text": "Genau so funktionieren Spielautomaten." },
+  { "id": "e", "text": "Den ganzen Film findest du auf meinem Kanal." }
+] }

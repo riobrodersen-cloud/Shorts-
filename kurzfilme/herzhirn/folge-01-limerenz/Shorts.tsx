@@ -31,7 +31,7 @@ const fokusBei = (filmFrame: number) => {
 
 export type Fenster = { von: number; bis: number }; // Sekunden im Hauptfilm
 
-const Hochkant: React.FC<{ fenster: Fenster[] }> = ({ fenster }) => {
+export const Hochkant: React.FC<{ fenster: Fenster[]; stimme?: boolean }> = ({ fenster, stimme = true }) => {
   const f = useCurrentFrame();
   // welche Filmstelle läuft gerade?
   let rest = f;
@@ -53,7 +53,7 @@ const Hochkant: React.FC<{ fenster: Fenster[] }> = ({ fenster }) => {
           const el = (
             <Sequence key={i} from={start} durationInFrames={len}>
               <Sequence from={-Math.round(w.von * FPS)}>
-                <Film />
+                <Film mitStimme={stimme} />
               </Sequence>
             </Sequence>
           );
@@ -78,7 +78,7 @@ const Hochkant: React.FC<{ fenster: Fenster[] }> = ({ fenster }) => {
 };
 
 // Schlusskarte: kein Auflösen, nur der Hinweis auf den ganzen Film
-const Schluss: React.FC = () => {
+export const Schluss: React.FC<{ zeilen?: [string, string, string] }> = ({ zeilen = ["Den ganzen Film", "findest du auf", "YouTube ♥"] }) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill style={{ background: "#4a2a5e" }}>
@@ -89,9 +89,9 @@ const Schluss: React.FC = () => {
         </defs>
         <rect width={1080} height={1920} fill="url(#sk)" />
         <Gluehwuermchen seed="skg" pfadPunkte={[[100, 1500], [400, 1100], [700, 900], [1000, 500]]} anzahl={60} tempo={0.6} streuung={200} groesse={8} />
-        <Handschrift text="Den ganzen Film" x={540} y={860} groesse={120} farbe="#ffe9a0" drehung={-4} kontur="#3a1430" fortschritt={interpolate(f, [0, 18], [0, 1], { extrapolateRight: "clamp" })} />
-        <Handschrift text="findest du auf" x={540} y={990} groesse={110} farbe="#ffe9a0" drehung={-4} kontur="#3a1430" fortschritt={interpolate(f, [10, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
-        <Handschrift text="YouTube ♥" x={540} y={1140} groesse={140} farbe="#ff8a7a" drehung={-4} kontur="#3a1430" fortschritt={interpolate(f, [20, 38], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+        <Handschrift text={zeilen[0]} x={540} y={860} groesse={120} farbe="#ffe9a0" drehung={-4} kontur="#3a1430" fortschritt={interpolate(f, [0, 18], [0, 1], { extrapolateRight: "clamp" })} />
+        <Handschrift text={zeilen[1]} x={540} y={990} groesse={110} farbe="#ffe9a0" drehung={-4} kontur="#3a1430" fortschritt={interpolate(f, [10, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+        <Handschrift text={zeilen[2]} x={540} y={1140} groesse={140} farbe="#ff8a7a" drehung={-4} kontur="#3a1430" fortschritt={interpolate(f, [20, 38], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
         <Strich punkte={[[260, 1180], [540, 1200], [820, 1170]]} breite={12} farbe="#ff8a7a" seed="sku" fortschritt={interpolate(f, [34, 50], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
       </svg>
       <Papier />

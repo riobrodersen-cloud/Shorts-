@@ -77,7 +77,7 @@ const Blende: React.FC<{ frames: number; children: React.ReactNode }> = ({ frame
   return <AbsoluteFill style={{ opacity: o }}>{children}</AbsoluteFill>;
 };
 
-export const Film: React.FC<{ mitTon?: boolean }> = ({ mitTon = true }) => {
+export const Film: React.FC<{ mitTon?: boolean; mitStimme?: boolean }> = ({ mitTon = true, mitStimme = true }) => {
   const { durationInFrames } = useVideoConfig();
   const liste = schnittliste();
   return (
@@ -92,7 +92,7 @@ export const Film: React.FC<{ mitTon?: boolean }> = ({ mitTon = true }) => {
           </Sequence>
         );
       })}
-      {mitTon && !Zt.schaetzung ? <Audio src={staticFile("herzhirn/folge01/voiceover.mp3")} /> : null}
+      {mitTon && mitStimme && !Zt.schaetzung ? <Audio src={staticFile("herzhirn/folge01/voiceover.mp3")} /> : null}
       {mitTon && !Zt.schaetzung ? <Audio src={staticFile("herzhirn/folge01/atmo.mp3")} /> : null}
     </AbsoluteFill>
   );
