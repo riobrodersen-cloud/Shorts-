@@ -7,6 +7,7 @@ import { Strasse } from "../kurzfilme/herzhirn/folge-01-limerenz/szenen/Strasse"
 import { GehirnTal } from "../kurzfilme/herzhirn/folge-01-limerenz/szenen/GehirnTal";
 import { Film, filmDauer } from "../kurzfilme/herzhirn/folge-01-limerenz/Film";
 import { ThumbnailA, ThumbnailB } from "../kurzfilme/herzhirn/folge-01-limerenz/Thumbnail";
+import { Short, SHORT_A, SHORT_B, shortDauer } from "../kurzfilme/herzhirn/folge-01-limerenz/Shorts";
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="LasurTest" component={LasurTest} durationInFrames={30} fps={30} width={1920} height={1080} />
@@ -17,5 +18,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Folge01Limerenz" component={Film} durationInFrames={filmDauer()} fps={30} width={1920} height={1080} />
     <Composition id="ThumbnailA" component={ThumbnailA} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="ThumbnailB" component={ThumbnailB} durationInFrames={1} fps={30} width={1280} height={720} />
+    <Composition id="ShortA" component={Short} defaultProps={{ fenster: SHORT_A }} durationInFrames={shortDauer(SHORT_A)} fps={30} width={1080} height={1920} />
+    <Composition id="ShortB" component={Short} defaultProps={{ fenster: SHORT_B }} durationInFrames={shortDauer(SHORT_B)} fps={30} width={1080} height={1920} />
   </>
 );
